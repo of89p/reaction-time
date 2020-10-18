@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body onclick="submitClick()">
+    <!-- <section id="action_area">
+        <div id="status"><h1>Click</h1></div>
+    </section>
+    <section id="action_area_green">
+        <div id="status_green"><h1>Click</h1></div>
+    </section> -->
+    <h1 id="status"></h1>
+    <div id="modal">
+        <h1>Results...</h1>
+        <h3><span id="winner"></span> won at <span id="winner_timing"></span>ms</h3>
+        Other timings: 
+        <div id="other_timings"></div>
+        <br>
+        Timings longer than 1.5s are not shown.
+        <br><br>
+        <button id="button" onclick="replay()">Play again</button>
+    </div>
+</body>
+
+<script src="/socket.io/socket.io.js"></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+crossorigin="anonymous"
+></script>
+<script src="./main.js"></script>
+
+
+
+</html>
